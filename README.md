@@ -18,25 +18,45 @@ If you don't have Python installed:
 2.  Download and install the latest version for your system (macOS or Windows).
 3.  **Important**: During installation, check the box that says **"Add Python to PATH"**.
 
-### 2. Download this Project
-Download the code (or clone this repository) to a folder on your computer.
+### 2. Download & Setup
+Open your terminal (Command Prompt, PowerShell, or Terminal) and run the following commands one by one:
 
-### 3. Setup & Run
-I have included a helper script to make this easy.
-
-**On macOS / Linux:**
-1.  Open your Terminal.
-2.  Navigate to the folder: `cd /path/to/folder`
-3.  Run the app:
+1.  **Clone the repository**:
     ```bash
-    sh run_app.sh
+    git clone https://github.com/JyotendraPallav/CaseWork.git
+    cd CaseWork
     ```
 
-**On Windows:**
-1.  Double-click `run_app.bat` (if created) or run in Command Prompt:
-    ```cmd
-    python app.py
+2.  **Create a Virtual Environment**:
+    ```bash
+    # Windows
+    python -m venv venv
+    
+    # macOS / Linux
+    python3 -m venv venv
     ```
+
+3.  **Activate the Environment**:
+    ```bash
+    # Windows
+    venv\Scripts\activate
+    
+    # macOS / Linux
+    source venv/bin/activate
+    ```
+
+4.  **Install Dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### 3. Run the App
+Once the environment is active and dependencies are installed:
+
+```bash
+python app.py
+```
+Open the link displayed in the terminal (usually `http://127.0.0.1:7860`) in your browser.
 
 ## 📖 How to Use
 
